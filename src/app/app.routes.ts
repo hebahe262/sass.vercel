@@ -18,6 +18,7 @@ import { VegnComponent } from './allmenu/vegn/vegn.component';
 import { VegetrianComponent } from './allmenu/vegetrian/vegetrian.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AllComponent } from './allmenu/all/all.component';
+import { DetailsComponent } from './details/details.component';
 
 export const routes: Routes = [
     {path:"", redirectTo:"Home",pathMatch:"full"},
@@ -37,7 +38,10 @@ export const routes: Routes = [
       {path:"side",component:SideComponent},
       {path:"starter",component:StarterComponent},
       {path:"vegn",component:VegnComponent},
-      {path:"vegetrian",component:VegetrianComponent}
+      {path:"vegetrian",component:VegetrianComponent},
+      
+
     ]},
+    {path:"details/:id",component:DetailsComponent},
     {path:"**",component:NotFoundComponent}
 ];

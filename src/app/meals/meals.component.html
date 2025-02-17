@@ -1,5 +1,7 @@
 <div class="card text-center hover:shadow-xl group hover:scale-105 duration-300 transition-all bg-white p-12 pb-4 rounded-[35px]">
-  <img
+   
+  <div >
+    <img
   class="w-full group-hover:rotate-[360deg] duration-700 transition-all rounded-full drop-shadow-xl -translate-y-20 shadow-2xl"
   
     [src]="interfaceMail.strMealThumb"
@@ -9,7 +11,9 @@
   <h4 class="Japanese">
     <i class="fa-solid fa-earth-americas  flex justify-center items-center gap-2 text-emerald-600"></i> {{ interfaceMail.strArea }}
   </h4>
-  <button class="text-white  bg-emerald-500 mt-4  hover:bg-emerald-600 font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 px-8 py-2 rounded-full"
+  <button [routerLink]="['/details',interfaceMail.idMeal]" class="text-white  bg-emerald-500 mt-4  hover:bg-emerald-600 font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 px-8 py-2 rounded-full"
   >View Recipe</button>
+  </div>
+  
 </div>
 

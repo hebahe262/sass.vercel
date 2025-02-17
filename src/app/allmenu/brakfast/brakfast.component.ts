@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { NameFood } from '../../interfaces/name-food';
 import { CategoriesService } from '../../services/categories/categories.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-brakfast',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './brakfast.component.html',
   styleUrl: './brakfast.component.scss'
 })

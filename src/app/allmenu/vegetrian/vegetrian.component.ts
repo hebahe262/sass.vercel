@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CategoriesService } from '../../services/categories/categories.service';
 import { NameFood } from '../../interfaces/name-food';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-vegetrian',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './vegetrian.component.html',
   styleUrl: './vegetrian.component.scss'
 })

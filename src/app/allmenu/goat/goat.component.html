@@ -5,7 +5,7 @@
 
            
             <h2 class="text-style font-semibold -mt-12 font-Pacifico tracking-wider	 text-xl"> {{nameFood.strMeal.split(" ").slice(0,2).join(" ")}}</h2>
-            <button  class="text-white bg-gradient-to-r mt-4 bg-emerald-500 hover:bg-emerald-600 font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300  px-8 py-2 rounded-full"> View Recipe</button>
+            <button   [routerLink]="['/details',nameFood.idMeal]"  class="text-white bg-gradient-to-r mt-4 bg-emerald-500 hover:bg-emerald-600 font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300  px-8 py-2 rounded-full"> View Recipe</button>
         </div>
         
     }

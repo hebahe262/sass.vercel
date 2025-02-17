@@ -7,6 +7,7 @@ import { inject, Injectable } from '@angular/core';
 })
 export class CategoriesService {
 private readonly _httpClient=inject(HttpClient)
+
   constructor() { }
   getCategories(Category:string) : Observable <any>{
     return this._httpClient.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${Category}`)

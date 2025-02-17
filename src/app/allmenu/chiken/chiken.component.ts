@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { NameFood } from '../../interfaces/name-food';
 import { CategoriesService } from '../../services/categories/categories.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-chiken',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './chiken.component.html',
   styleUrl: './chiken.component.scss'
 })

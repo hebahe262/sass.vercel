@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CategoriesService } from '../../services/categories/categories.service';
 import { NameFood } from '../../interfaces/name-food';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-miscillaneous',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './miscillaneous.component.html',
   styleUrl: './miscillaneous.component.scss'
 })
